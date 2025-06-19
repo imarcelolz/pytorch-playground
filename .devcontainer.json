@@ -1,0 +1,18 @@
+{
+  "name": "PyTorch Conda DevContainer",
+  "dockerComposeFile": ["./docker-compose.yml"],
+  "service": "pytorch",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.pythonPath": "/opt/conda/envs/pytorch-env/bin/python"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "postCreateCommand": "conda run -n pytorch-env pip install -U pip"
+}

@@ -1,0 +1,13 @@
+name: pytorch-env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - pip
+  - pip:
+      - pytest
+      - black
