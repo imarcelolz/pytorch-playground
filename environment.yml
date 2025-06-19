@@ -1,4 +1,4 @@
-name: pytorch-env
+name: pytorch-playground
 channels:
   - defaults
   - conda-forge
